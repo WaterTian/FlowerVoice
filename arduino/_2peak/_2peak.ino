@@ -1,9 +1,7 @@
 #define steps 128
-
 float values[steps];
 float alpha;
 int maxPos, maxVal;
-
 void setup ()
 {
   pinMode (9, OUTPUT); 
@@ -13,19 +11,12 @@ void setup ()
   TCCR1B |= (1 << WGM12);         // CTC mode
   Serial.begin(57600);
 }
-
 void loop () {
   if (Serial.available()) {
     alpha = (float)Serial.read() / 255.0f;
   }
-  
   outPut(0);
-  
-  
 }
-
-
-
 void outPut(int pos)
 {
   maxPos = 0;
@@ -42,12 +33,6 @@ void outPut(int pos)
       maxPos = i;
     }
   }
-  //Serial.print(pos, DEC);
-  //Serial.print(" ");
-  //Serial.print(maxPos, DEC);
-  //Serial.print(" ");
-  //Serial.println(maxVal, DEC);
-  
   Serial.println(maxPos, DEC);
 }
 
