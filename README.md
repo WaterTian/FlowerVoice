@@ -1,5 +1,5 @@
 # FlowerVoice
-[![img](http://www.southint.com/assets/work/4_1.jpg)](http://www.southint.com/work4)
+[![img](https://raw.githubusercontent.com/WaterTian/FlowerVoice/master/FlowerVoice.jpg)](http://www.southint.com/work4)
 
 interactive installation for sound
 =============
