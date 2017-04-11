@@ -1,4 +1,4 @@
-#N canvas 244 55 1281 762 10;
+#N canvas 630 514 1281 762 10;
 #X declare -lib moocow;
 #X msg 59 148 close;
 #X floatatom 209 148 5 0 255 0 - - -;
@@ -319,18 +319,18 @@
 #X coords 0 1 2204 -1 200 140 1;
 #X restore 63 586 graph;
 #X obj 123 482 metro 200;
-#X obj 123 464 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 1 1
+#X obj 123 464 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 1
 ;
 #X obj 63 459 *~;
 #X obj 64 339 hsl 150 20 50 500 0 1 empty empty carrier_frequency 10
-10 1 12 -262131 -1 -1 2848 0;
+10 1 12 -262131 -1 -1 9205 0;
 #X obj 85 408 hsl 150 20 1 50 0 1 empty empty modulating_frequency
-10 10 1 12 -228992 -1 -1 2281 0;
+10 10 1 12 -228992 -1 -1 5930 0;
 #X obj 80 437 osc~;
 #X obj 101 364 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 1 14
--195568 -1 -1 136.013 256;
+-195568 -1 -1 328.003 256;
 #X obj 120 438 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 1 14
--195568 -1 -1 8.50128 256;
+-195568 -1 -1 20.5013 256;
 #X obj 62 367 osc~;
 #X obj 123 506 tabwrite~ \$0-wavetable;
 #X obj 64 308 * 8;
@@ -341,18 +341,18 @@
 #X obj 113 307 / 2;
 #X obj 323 474 *~;
 #X obj 327 386 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 8400 1;
 #X obj 398 410 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 8400 1;
 #X obj 324 407 mtof;
 #X obj 395 430 mtof;
 #X obj 395 458 osc~;
 #X obj 322 538 dac~;
 #X obj 323 514 *~;
-#X obj 339 496 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 1 1
+#X obj 339 496 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 1
 ;
 #X obj 398 506 metro 200;
-#X obj 398 488 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 1 1
+#X obj 398 488 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 1
 ;
 #X obj 398 530 tabwrite~ \$1-wavetable;
 #N canvas 0 22 450 300 (subpatch) 0;
@@ -849,7 +849,7 @@
 #X restore 604 294 pd drums;
 #X obj 605 454 dac~;
 #X obj 622 344 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 12700 1;
 #X obj 619 364 mtof;
 #X obj 605 416 *~;
 #X obj 604 266 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 1
@@ -925,7 +925,7 @@
 0 0 0 0 0;
 #X coords 0 1 2204 -1 200 140 1;
 #X restore 603 506 graph;
-#X obj 664 391 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 1 1
+#X obj 664 391 tgl 15 0 empty empty empty 0 -6 0 8 -24198 -1 -1 0 1
 ;
 #X obj 664 433 tabwrite~ \$2-wavetable;
 #X obj 564 327 * 8;
@@ -939,6 +939,7 @@
 #X msg 113 33 70;
 #X msg 187 60 devicename /dev/cu.usbmodem1411;
 #X obj 324 347 * 4;
+#X msg 187 35 devicename /dev/cu.usbmodem1421;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -995,3 +996,4 @@
 #X connect 60 0 2 0;
 #X connect 61 0 29 0;
 #X connect 61 0 30 0;
+#X connect 62 0 2 0;
