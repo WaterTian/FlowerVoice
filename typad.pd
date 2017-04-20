@@ -174,7 +174,7 @@
 -1;
 #X obj 284 166 line;
 #X obj 287 188 hsl 80 12 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7900 1;
+-1 -1 0 1;
 #X obj 284 143 t a;
 #X obj 378 -17 t b;
 #X obj 279 -7 loadbang;
@@ -185,6 +185,8 @@
 #X obj 279 20 random 28;
 #X obj 380 45 random 6000;
 #X obj 380 99 delay 3000;
+#X text 495 -9 southint.com;
+#X text 494 3 WaterTian;
 #X connect 0 0 2 0;
 #X connect 0 1 3 0;
 #X connect 1 0 0 1;

@@ -1,13 +1,13 @@
-#N canvas 1618 -620 1292 945 10;
+#N canvas 162 109 995 706 10;
 #X msg -248 217 bang;
-#X msg -248 482 12 6 9 5;
+#X msg -248 482 11 12 3 3;
 #N canvas 670 219 842 656 noise2 0;
 #X obj 12 126 noise~;
 #X obj 160 298 *~;
 #X obj 175 208 line;
 #X obj 175 185 t a b;
 #X obj 178 230 hsl 80 12 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1104 1;
+-1 -1 0 1;
 #X obj 12 150 *~ 0.1;
 #X obj 140 5 inlet;
 #X obj 143 39 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -78,9 +78,9 @@
 -1 -1;
 #X obj -200 661 +~;
 #X obj -248 661 +~;
-#X msg -159 483 12 6 9 5;
-#X msg -70 482 12 6 9 5;
-#X msg 20 483 12 6 9 5;
+#X msg -159 483 11 12 3 3;
+#X msg -70 482 11 12 3 3;
+#X msg 20 483 11 12 3 3;
 #X obj 135 60 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj -248 457 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -91,19 +91,19 @@
 -1 -1;
 #X obj 20 463 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X msg 110 480 12 6 9 5;
+#X msg 110 480 11 12 3 3;
 #X obj 110 461 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 404 376 5 0 0 0 - - -;
 #X obj 334 392 metro 8000;
-#X obj 650 475 t a;
-#X obj 650 441 sel 1 0;
-#X obj 650 498 line~;
+#X obj 580 475 t a;
+#X obj 580 441 sel 1 0;
+#X obj 580 498 line~;
 #X obj -199 703 *~;
 #X obj -247 703 *~;
-#X obj 650 415 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 580 415 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X msg 650 458 1 2000;
+#X msg 580 458 1 2000;
 #X obj -247 733 outlet~;
 #X obj -198 733 outlet~;
 #X obj 135 33 inlet;
@@ -111,14 +111,14 @@
 #X obj -127 248 random 14;
 #X obj -188 248 random 14;
 #X obj -248 248 random 14;
-#X msg 708 458 0 2000;
-#X text 650 392 play or stop;
+#X msg 638 458 0 2000;
+#X text 580 392 play or stop;
 #X text -287 31 southint.com;
 #X text -288 43 WaterTian;
 #X obj 341 35 inlet;
 #X floatatom 341 64 5 0 0 0 - - -;
 #X obj -248 187 metro 5000;
-#X msg 200 480 12 6 9 5;
+#X msg 200 480 11 12 3 3;
 #X obj 200 461 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 73 343 sel 0 1 2 3 4 5;
@@ -127,7 +127,7 @@
 -1;
 #X obj 73 293 f 0;
 #X obj 99 293 + 1;
-#N canvas 1745 -742 855 907 arper 0;
+#N canvas 1745 22 855 907 arper 0;
 #X obj 78 192 unpack 1 2 3 4 5 6 7 8 9 10 11;
 #X obj 66 410 random 100;
 #X obj 66 452 line;
